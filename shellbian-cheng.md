@@ -108,5 +108,61 @@ $[exp]                 作用和$((exp))相同
 ${var symbol pattern}  通过正则表达式修改变量值${var:-string}、${var:=string}、 ${var:+string}、${var:?string}、${var%pattern}、${var%%pattern}、${var#pattern}、${var##pattern}、${var:num}、${var:num1:num2}、${var/pattern/pattern}、${var//pattern/pattern}.
 ```
 
+* 内建命令
+
+通过`type command`区分该命令是否是内建命令。
+
+```
+IO方面：
+echo
+printf
+read
+
+文件系统：
+cd
+pwd
+pushd、popd、dirs
+
+变量方面：
+let
+eval
+set
+unset
+export
+declare、typeset
+readonly
+getopts
+
+脚本行为：
+source、.
+exit
+exec
+shopt
+caller
+
+命令方面：
+true
+false
+type
+hash
+bind
+help
+
+作业控制：
+jobs
+disdown
+fg、bg
+wait
+suspend
+logout
+times
+kill
+killall
+command
+builtin
+enable
+autoload
+```
+
 
 
