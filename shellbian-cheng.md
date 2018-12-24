@@ -114,7 +114,7 @@ ${var symbol pattern}  通过正则表达式修改变量值${var:-string}、${va
 
 ```
 IO方面：
-echo
+echo                   输出变量到控制台.
 printf
 read
 
@@ -163,6 +163,16 @@ builtin
 enable
 autoload
 ```
+
+---
+
+外部命令：
+
+```
+
+```
+
+其他用法：
 
 
 
