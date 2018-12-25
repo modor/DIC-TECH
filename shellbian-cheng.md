@@ -115,23 +115,23 @@ ${var symbol pattern}  通过正则表达式修改变量值${var:-string}、${va
 ```
 IO方面：
 echo                   输出变量到控制台.
-printf
-read
+printf                 格式化输出，含义类似echo.
+read                   从stdin中读取.
 
 文件系统：
-cd
-pwd
-pushd、popd、dirs
+cd                     修改工作目录
+pwd                    打印当前工作目录
+pushd、popd、dirs      将目录保存到栈中并修改工作目录为该目录；出栈并修改目录为该目录；查看目录栈所有内容.
 
 变量方面：
-let
-eval
+let                    内嵌的执行算术运算的命令，见数学运算内容.
+eval                   
 set
-unset
-export
-declare、typeset
-readonly
-getopts
+unset                  删除一个shell变量.
+export                 使变量在export所运行的脚本和其子进程中都可用，但无法在父进程或者同级进程使用，可以在配置文件中配置，每次新建会话会去读取配置文件，从而间接生效.
+declare、typeset       用来声明shell变量，设置变量的属性，常用-x表明脚本外也可以访问，相当于export.
+readonly               用来定义只读变量，一旦使用readonly定义的变量在脚本中就不能更改.
+getopts                
 
 脚本行为：
 source、.
@@ -173,6 +173,4 @@ autoload
 ```
 
 其他用法：
-
-
 
