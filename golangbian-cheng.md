@@ -11,6 +11,8 @@ float32、float64                            浮点数.
 complex64、complex128                       复数.
 bool                                        布尔类型.
 string                                      字符串类型.
+
+衍生类型：
 const                                       常量类型，本质上属于布尔、字符串或者数字.
 uintptr                                     指针类型，本质为32位无符号整数.
 
@@ -68,7 +70,7 @@ new                                         返回指向Type的指针.
 panic                                       停止常规的goroutine.
 print                                       内建函数print以特有的方法格式化参数并将结果写入标准错误，用于自举和调试.
 println                                     类似print，但会在参数输出之间添加空格，输出结束后换行.
-recover                                     允许程序定义goroutine的panic动作.                     
+recover                                     允许程序定义goroutine的panic动作.
 ```
 
 ---
