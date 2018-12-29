@@ -21,6 +21,7 @@ array                                       数组类型.
 slice                                       切片类型，类似于java的list类型.
 map                                         散列表类型.
 struct                                      结构体类型.
+chan T                                      通道数据类型.
 ```
 
 * 内置（buildin）数据类型和函数
