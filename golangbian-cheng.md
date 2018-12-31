@@ -4,24 +4,22 @@
 * 原生数据类型
 
 ```
-基本类型：
+值类型：
 int8、int16、int32、int64                    有符号整数.
 uint8、uint16、uint32、uint64                无符号整数.
 float32、float64                            浮点数.
 complex64、complex128                       复数.
 bool                                        布尔类型.
 string                                      字符串类型.
-
-衍生类型：
-const                                       常量类型，本质上属于布尔、字符串或者数字.
-uintptr                                     指针类型，本质为32位无符号整数.
-
-复合类型：
 array                                       数组类型.
+struct                                      结构体类型.
+
+引用类型：
 slice                                       切片类型，类似于java的list类型.
 map                                         散列表类型.
-struct                                      结构体类型.
 chan T                                      通道数据类型.
+uintptr                                     指针类型，本质为32位无符号整数.
+interface                                   接口类型.
 ```
 
 * 内置（buildin）数据类型和函数
