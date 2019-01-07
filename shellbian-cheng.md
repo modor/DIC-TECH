@@ -145,23 +145,23 @@ true                   返回(零)成功退出状态码的命令.
 false                  返回失败退出状态码的命令.
 type                   显示命令类型是内建还是工具命令.
 hash                   
-bind
-help
+bind                   
+help                   帮助命令.
 
 作业控制：
 jobs                   列出所有作业，给出作业号.
 disdown                从shell的激活作业表中删除作业.
 fg、bg                 fg是放到前台，bg是放入后台.
-wait                   
-suspend
-logout
-times
-kill
-killall
-command
-builtin
-enable
-autoload
+wait                   等待后台所有作业结束结束进程. 
+suspend                挂起进程，功能与ctrl+z类似.
+logout                 退出一个已经登录的shell，可以指定退出状态码.
+times                  给出执行命令所用时间.
+kill                   杀死进程.
+killall                通过名字杀掉进程.
+command                禁用别名和函数查找，格式“command + 非别名命令”.
+builtin                只调用内建命令，格式“builtin + 内建命令”
+enable                 禁用或者恢复内建命令，格式“enable -n kill”（禁用内建kill）或“enable -a”（恢复所有内建命令）.
+autoload               
 ```
 
 ---
@@ -467,4 +467,10 @@ rdist
 ```
 
 其他用法：
+
+```
+
+```
+
+
 
