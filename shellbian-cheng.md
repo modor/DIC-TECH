@@ -12,7 +12,7 @@ echo $?                 #退出状态为0, 因为命令执行成功
 
 lskdf                   #无效命令.
 echo $?                 #非零的退出状态, 因为命令执行失败.
-echo
+echo                    字符串输出.
 
 exit 113                #返回113退出状态给shell.
 ```
@@ -126,7 +126,7 @@ pushd、popd、dirs      将目录保存到栈中并修改工作目录为该目�
 变量方面：
 let                    内嵌的执行算术运算的命令，见数学运算内容.
 eval                   
-set
+set                    设置各种shell选项或者列 出shell变量，比如-e设置命令返回一个非0退出状态值就退出.
 unset                  删除一个shell变量.
 export                 使变量在export所运行的脚本和其子进程中都可用，但无法在父进程或者同级进程使用，可以在配置文件中配置，每次新建会话会去读取配置文件，从而间接生效.
 declare、typeset       用来声明shell变量，设置变量的属性，常用-x表明脚本外也可以访问，相当于export.
@@ -161,7 +161,7 @@ killall                通过名字杀掉进程.
 command                禁用别名和函数查找，格式“command + 非别名命令”.
 builtin                只调用内建命令，格式“builtin + 内建命令”
 enable                 禁用或者恢复内建命令，格式“enable -n kill”（禁用内建kill）或“enable -a”（恢复所有内建命令）.
-autoload               
+autoload
 ```
 
 ---
