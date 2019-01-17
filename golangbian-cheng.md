@@ -116,5 +116,11 @@ recover                                     允许程序定义goroutine的panic�
 
 ---
 
+* Effective Golang
+
+```
+
+```
+
 
 
