@@ -48,5 +48,84 @@
 5.各条错误处理通路测试：保证每一个异常都经过测试
 ```
 
+---
+
+### 设计模式
+
+---
+
+* 按封装变化分类
+
+```
+1.组件协作
+    Template Method
+    Strategy
+    Observer/Event
+2.单一职责
+    Decorator
+    Bridge
+3.对象创建
+    Factory Method
+    Abstract Factory
+    Prototype
+    Builder
+4.对象性能
+    Singleton
+    Flyweight
+5.接口隔离
+    Facade
+    Proxy
+    Mediator
+    Adapter
+6.状态变化
+    Memento
+    State
+7.数据结构
+    Composite
+    Iterator
+    Chain of Resposibility
+8.行为变化
+    Command
+    Visitor
+9.领域问题
+    Interpreter
+```
+
+* 按作用分类
+
+```
+1.创建型模式
+    Factory Method
+    Abstract Factory
+    Singleton
+    Builder
+    Prototype
+2.结构型模式
+    Adapter
+    Decorator
+    Proxy
+    Facade
+    Bridge
+    Composite
+    Flyweight
+3.行为模式
+    Strategy
+    Template Method
+    Observer/Event
+    Iterator
+    Chain of Resposibility
+    Command
+    Memento
+    State
+    Mediator
+    Interpreter
+    Visitor
+4.其他
+    并发型模型
+    线程池模型
+```
+
+---
+
 
 
